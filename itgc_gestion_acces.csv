@@ -1,0 +1,784 @@
+﻿Texte;Label enrichi;Norme / Référence
+Les droits d’accès sont revus tous les 6 mois.;Conforme – Bonnes pratiques;ISO 27001 A.9.2.5 / NIST AC-2 j / COBIT DSS05
+Aucune revue des droits depuis 18 mois.;Non conforme – Absence de contrôle;ISO 27001 A.9.2.5 / SOX 404
+La revue des droits est effectuée de manière irrégulière (environ tous les 14 mois).;Partiellement conforme – Contrôle insuffisamment fréquent;ISO 27001 A.9.2.5
+Les revues d’accès sont tracées et approuvées par un responsable.;Conforme – Contrôle documenté et validé;ISO 27001 A.9.2.6 / COBIT BAI08
+Les revues d’accès ne sont pas documentées.;Non conforme – Absence de traçabilité;ISO 27001 A.12.4.1
+Des comptes utilisateurs restent actifs plus de 7 jours après le départ.;Non conforme – Risque de comptes orphelins;ISO 27001 A.9.2.6 / NIST AC-2 g
+Les comptes des collaborateurs partants sont désactivés immédiatement.;Conforme – Processus réactif;ISO 27001 A.9.2.6 / SOX 404
+Le processus de départ prévoit la révocation sous 72h.;Partiellement conforme – Délai trop long;ISO 27001 A.9.2.6
+La création de comptes utilisateurs est validée par un responsable hiérarchique.;Conforme – Contrôle d’approbation en place;ISO 27001 A.9.2.1 / NIST AC-2 b
+Des comptes sont créés sans approbation formelle.;Non conforme – Absence d’autorisation;ISO 27001 A.9.2.1
+Les comptes administrateurs sont nominatifs et limités.;Conforme – Principe du moindre privilège respecté;ISO 27001 A.9.2.3 / NIST AC-6
+Un compte administrateur générique est utilisé par plusieurs personnes.;Non conforme – Absence de responsabilité individuelle;ISO 27001 A.9.2.3
+L’attribution des droits suit le principe du moindre privilège.;Conforme – Contrôle granulaire;ISO 27001 A.9.1.2 / NIST AC-6
+Certains utilisateurs disposent de droits supérieurs à leurs besoins.;Partiellement conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Une séparation stricte des tâches existe entre utilisateurs métiers et administrateurs.;Conforme – Ségrégation efficace;ISO 27001 A.6.1.2 / COBIT DSS06
+Le même utilisateur peut développer et mettre en production.;Non conforme – Absence de séparation des tâches;ISO 27001 A.6.1.2
+Une MFA (authentification multi-facteurs) est obligatoire pour les accès sensibles.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2 / NIST IA-2
+Seul le mot de passe protège les accès administrateurs.;Partiellement conforme – Authentification faible;ISO 27001 A.9.4.2
+Aucune authentification forte n’est mise en place.;Non conforme – Risque critique;ISO 27001 A.9.4.2 / NIST IA-2
+Les mots de passe sont stockés hachés et salés.;Conforme – Bonnes pratiques de stockage;ISO 27001 A.10.1 / NIST IA-5 c
+Les mots de passe sont stockés en clair dans la base.;Non conforme – Failles majeures;ISO 27001 A.10.1
+La politique impose un changement de mot de passe tous les 12 mois.;Partiellement conforme – Politique faible;NIST IA-5 / ISO 27001 A.9.4.3
+Les mots de passe doivent être changés tous les 90 jours.;Conforme – Bonnes pratiques (classiques);ISO 27001 A.9.4.3
+Aucun changement de mot de passe n’est imposé.;Non conforme – Absence de politique;ISO 27001 A.9.4.3
+Les tentatives d’accès sont limitées à 5 échecs avant blocage.;Conforme – Contrôle de verrouillage en place;ISO 27001 A.9.4.3 / NIST AC-7
+Les sessions inactives sont automatiquement déconnectées après 15 minutes.;Conforme – Bonnes pratiques de session;ISO 27001 A.9.4.2
+Les sessions restent ouvertes indéfiniment si non fermées manuellement.;Non conforme – Risque de session persistante;ISO 27001 A.9.4.2
+Un processus de recertification des accès administrateurs est réalisé annuellement.;Conforme – Bonnes pratiques de gouvernance;ISO 27001 A.9.2.5 / NIST AC-2 j
+Les recertifications ne couvrent que les utilisateurs métiers, les comptes à privilèges sont exclus.;Partiellement conforme – Périmètre incomplet;ISO 27001 A.9.2.5 / COBIT DSS05
+Aucun suivi des comptes génériques n’est effectué.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3 / NIST AC-2
+Un registre central des accès est maintenu et mis à jour en temps réel.;Conforme – Traçabilité assurée;ISO 27001 A.9.2.6 / COBIT DSS05
+Les demandes d’accès sont parfois validées oralement, sans trace écrite.;Partiellement conforme – Validation non tracée;ISO 27001 A.9.2.1 / SOX 404
+Des comptes techniques disposent de droits excessifs par rapport à leur usage.;Non conforme – Excès de privilèges;ISO 27001 A.9.2.3 / NIST AC-6
+Les droits des prestataires externes sont révoqués à la fin du contrat.;Conforme – Contrôle appliqué;ISO 27001 A.9.2.6 / COBIT DSS05
+Les droits des prestataires restent actifs après leur départ.;Non conforme – Risque d’accès non autorisé;ISO 27001 A.9.2.6 / NIST AC-2 g
+Un contrôle d’accès physique et logique combiné est exigé pour les administrateurs systèmes.;Conforme – Défense en profondeur;ISO 27001 A.11.1.1 / NIST PE-3
+Les identifiants par défaut des applications ne sont pas modifiés à l’installation.;Non conforme – Vulnérabilité connue;ISO 27001 A.9.2.4 / NIST IA-5 f
+Un processus d’accès temporaire est en place pour les interventions d’urgence, avec journalisation.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les accès temporaires d’urgence ne sont pas supprimés après usage.;Non conforme – Risque d’escalade de privilèges;ISO 27001 A.9.2.6 / NIST AC-2 d
+Un processus d’examen semestriel des accès aux applications critiques est documenté et validé.;Conforme – Bonnes pratiques de revue;ISO 27001 A.9.2.5 / SOX 404
+Les comptes inactifs depuis plus de 90 jours sont automatiquement désactivés.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6 / NIST AC-2 h
+Aucun mécanisme n’existe pour détecter les comptes inactifs.;Non conforme – Risque de compromission;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les recertifications d’accès sont effectuées mais seulement tous les deux ans.;Partiellement conforme – Fréquence insuffisante;ISO 27001 A.9.2.5 / NIST AC-2 j
+Les comptes utilisateurs sont désactivés après départ, mais avec un délai pouvant aller jusqu’à 15 jours.;Partiellement conforme – Désactivation trop tardive;ISO 27001 A.9.2.6 / SOX 404
+Une authentification multi-facteurs est en place, mais uniquement pour les administrateurs.;Partiellement conforme – Périmètre limité;ISO 27001 A.9.4.2 / NIST IA-2
+Les mots de passe sont complexes mais la longueur minimale reste inférieure aux recommandations.;Partiellement conforme – Politique affaiblie;ISO 27001 A.9.4.3 / NIST IA-5
+Les journaux d’accès sont activés mais ne couvrent pas l’ensemble des systèmes critiques.;Partiellement conforme – Journalisation partielle;ISO 27001 A.12.4.1 / COBIT DSS05
+La séparation des tâches est en place mais certaines exceptions ne sont pas revues régulièrement.;Partiellement conforme – Contrôle non maintenu;ISO 27001 A.6.1.2 / COBIT DSS06
+Un processus de revue des droits existe mais les résultats ne sont pas systématiquement approuvés par un responsable.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5 / COBIT BAI08
+Les sessions inactives sont coupées après 60 minutes au lieu des 15 minutes recommandées.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2 / NIST AC-12
+Un registre central des accès existe mais il est mis à jour manuellement, entraînant des retards.;Partiellement conforme – Fiabilité réduite;ISO 27001 A.9.2.6 / COBIT DSS05
+Les comptes génériques sont limités mais encore utilisés pour certains scripts techniques.;Partiellement conforme – Risque résiduel;ISO 27001 A.9.2.3 / NIST AC-2
+Un processus d’accès temporaire est défini mais les comptes d’urgence ne sont pas toujours fermés immédiatement après usage.;Partiellement conforme – Risque d’accès résiduel;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les droits d’accès à une application critique n’ont jamais été revus depuis plus de deux ans.;Non conforme – Absence de recertification;ISO 27001 A.9.2.5 / NIST AC-2 j
+Des comptes d’utilisateurs supprimés dans l’AD restent actifs dans l’application métier.;Non conforme – Déprovisionnement incomplet;ISO 27001 A.9.2.6 / COBIT DSS05
+Les comptes génériques sont partagés sans journalisation des usages.;Non conforme – Manque de traçabilité individuelle;ISO 27001 A.9.2.3 / NIST AC-2
+Les accès VPN de prestataires expirés restent valides.;Non conforme – Accès tiers non révoqués;ISO 27001 A.9.2.6 / NIST AC-2 g
+Les demandes d’accès sont accordées sans approbation hiérarchique formelle.;Non conforme – Autorisation absente;ISO 27001 A.9.2.1 / SOX 404
+Aucun contrôle de verrouillage de compte après échecs répétés n’est configuré.;Non conforme – Risque force brute;ISO 27001 A.9.4.3 / NIST AC-7
+La MFA n’est pas activée pour les accès administrateurs distants.;Non conforme – Authentification insuffisante;ISO 27001 A.9.4.2 / NIST IA-2
+Des comptes inactifs (≥ 180 jours) ne sont pas automatiquement désactivés.;Non conforme – Contrôle d’inactivité absent;ISO 27001 A.9.2.6 / NIST AC-2 h
+Des droits élevés sont attribués par défaut lors de la création des comptes.;Non conforme – Principe du moindre privilège non respecté;ISO 27001 A.9.1.2 / NIST AC-6
+Les comptes d’urgence (break-glass) ne sont pas revus ni scellés après utilisation.;Non conforme – Contrôle d’accès temporaire défaillant;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les identifiants par défaut des appliances sécurité n’ont pas été changés.;Non conforme – Identifiants par défaut actifs;ISO 27001 A.9.2.4 / NIST IA-5 f
+Aucun registre central des habilitations n’est maintenu.;Non conforme – Inventaire des accès manquant;ISO 27001 A.9.2.6 / COBIT DSS05
+Les accès des comptes techniques permettent une connexion interactive.;Non conforme – Usage non restreint des comptes techniques;ISO 27001 A.9.2.3 / NIST AC-6
+Les mouvements internes (changement de poste) ne déclenchent pas de revue des droits.;Non conforme – Processus Mover absent;ISO 27001 A.9.2.5 / COBIT DSS05
+Les revues d’accès sont effectuées mais seulement pour deux applications sur cinq.;Partiellement conforme – Couverture incomplète;ISO 27001 A.9.2.5 / COBIT DSS05
+La désactivation des comptes après départ intervient sous 7 jours ouvrés.;Partiellement conforme – Délai de révocation trop long;ISO 27001 A.9.2.6 / SOX 404
+La MFA est déployée pour les administrateurs mais pas pour les utilisateurs à privilèges applicatifs.;Partiellement conforme – Périmètre restreint;ISO 27001 A.9.4.2 / NIST IA-2
+Les demandes d’accès sont tracées par e-mail mais sans outil dédié ni piste d’audit consolidée.;Partiellement conforme – Traçabilité fragile;ISO 27001 A.9.2.1 / SOX 404
+Les comptes inactifs sont désactivés après 120 jours au lieu de 90.;Partiellement conforme – Seuil d’inactivité élevé;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les comptes de prestataires restent actifs plusieurs mois après la fin de leur mission.;Non conforme – Risque de comptes orphelins;ISO 27001 A.9.2.6 / NIST AC-2 g
+Des utilisateurs partagent leurs identifiants pour accéder à une application critique.;Non conforme – Partage d’identifiants;ISO 27001 A.9.2.3 / NIST IA-2
+Aucun contrôle périodique n’est réalisé sur les droits à privilèges élevés.;Non conforme – Absence de revue des comptes sensibles;ISO 27001 A.9.2.5 / SOX 404
+La suppression des accès est effectuée mais parfois avec plusieurs semaines de retard.;Partiellement conforme – Révocation tardive;ISO 27001 A.9.2.6
+Les demandes d’accès ne sont pas toutes tracées dans un outil centralisé.;Partiellement conforme – Absence de traçabilité complète;ISO 27001 A.9.2.1
+Un administrateur a des droits étendus sur toutes les applications sans justification.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2 / NIST AC-6
+Les logs d’accès sont activés mais ne sont jamais revus.;Partiellement conforme – Contrôle non effectif;ISO 27001 A.12.4.1
+Les comptes inactifs sont identifiés mais désactivés manuellement, avec des délais variables.;Partiellement conforme – Procédure non automatisée;ISO 27001 A.9.2.6
+Plusieurs comptes techniques ont des mots de passe identiques partagés entre équipes.;Non conforme – Risque de compromission;ISO 27001 A.9.2.3 / NIST IA-5
+Les utilisateurs peuvent conserver des droits d’accès après un changement de poste.;Non conforme – Absence de mise à jour des habilitations;ISO 27001 A.9.2.5
+Les comptes administrateurs sont attribués uniquement sur justification validée.;Conforme – Contrôle d’attribution;ISO 27001 A.9.2.3 / NIST AC-6
+Les demandes d’accès sont traitées via un outil de ticketing avec approbation managériale.;Conforme – Processus formalisé;ISO 27001 A.9.2.1 / SOX 404
+Les droits d’accès sont recertifiés tous les 12 mois et validés par les managers.;Conforme – Revue périodique documentée;ISO 27001 A.9.2.5 / COBIT DSS05
+La révocation des droits est immédiate en cas de départ.;Conforme – Désactivation réactive;ISO 27001 A.9.2.6
+Un registre central des habilitations est mis à jour automatiquement.;Conforme – Traçabilité fiable;ISO 27001 A.9.2.6 / COBIT DSS05
+La MFA est obligatoire pour tous les accès VPN.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2 / NIST IA-2
+Les sessions inactives sont fermées après 10 minutes.;Conforme – Bonnes pratiques renforcées;ISO 27001 A.9.4.2 / NIST AC-12
+Chaque création de compte est approuvée par le responsable hiérarchique.;Conforme – Contrôle d’accès en amont;ISO 27001 A.9.2.1
+Les comptes génériques ont été supprimés au profit de comptes nominatifs.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3
+Les droits sont limités au strict nécessaire pour chaque poste.;Conforme – Principe du moindre privilège;ISO 27001 A.9.1.2 / NIST AC-6
+Les comptes d’urgence sont activés temporairement et supprimés automatiquement.;Conforme – Contrôle temporaire;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les mots de passe sont stockés de façon sécurisée et vérifiés régulièrement.;Conforme – Bonnes pratiques de stockage;ISO 27001 A.10.1 / NIST IA-5 c
+Les identifiants par défaut sont changés immédiatement après installation.;Conforme – Sécurité de base respectée;ISO 27001 A.9.2.4
+Les prestataires disposent d’accès limités et tracés.;Conforme – Gestion des tiers maîtrisée;ISO 27001 A.9.2.6
+Les revues d’accès aux applications critiques sont semestrielles.;Conforme – Gouvernance établie;ISO 27001 A.9.2.5 / SOX 404
+Les accès inactifs de plus de 90 jours sont désactivés automatiquement.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6 / NIST AC-2 h
+L’attribution de privilèges est validée par un comité de sécurité.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.3 / COBIT DSS05
+Les comptes utilisateurs sont créés sans validation formelle.;Non conforme – Absence d’autorisation;ISO 27001 A.9.2.1
+Les comptes administrateurs partagent le même mot de passe.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3 / NIST IA-5
+Aucune recertification des accès n’a été effectuée depuis 3 ans.;Non conforme – Absence de contrôle;ISO 27001 A.9.2.5
+Des comptes d’anciens prestataires restent actifs.;Non conforme – Risque tiers;ISO 27001 A.9.2.6
+Les comptes d’urgence ne sont jamais révoqués après usage.;Non conforme – Contrôle absent;ISO 27001 A.9.2.6 / NIST AC-2 d
+Aucun verrouillage de compte n’intervient après plusieurs échecs.;Non conforme – Risque d’attaque brute force;ISO 27001 A.9.4.3 / NIST AC-7
+Des droits admin sont accordés par défaut aux nouveaux utilisateurs.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les sessions restent ouvertes indéfiniment.;Non conforme – Risque de session persistante;ISO 27001 A.9.4.2
+Les identifiants par défaut n’ont jamais été modifiés.;Non conforme – Vulnérabilité critique;ISO 27001 A.9.2.4
+Aucune MFA n’est exigée pour les accès distants.;Non conforme – Contrôle absent;ISO 27001 A.9.4.2
+Des comptes inactifs depuis 1 an restent utilisables.;Non conforme – Risque d’usurpation;ISO 27001 A.9.2.6
+Aucun registre des habilitations n’est maintenu.;Non conforme – Absence de traçabilité;ISO 27001 A.9.2.6
+Les comptes techniques permettent une connexion interactive.;Non conforme – Risque de compromission;ISO 27001 A.9.2.3
+Les demandes d’accès sont parfois orales et non tracées.;Non conforme – Absence de justification;ISO 27001 A.9.2.1
+Les recertifications ne couvrent que certaines applications.;Partiellement conforme – Couverture incomplète;ISO 27001 A.9.2.5
+La désactivation des comptes après départ se fait sous 10 jours.;Partiellement conforme – Révocation tardive;ISO 27001 A.9.2.6
+La MFA n’est activée que pour les administrateurs systèmes.;Partiellement conforme – Périmètre limité;ISO 27001 A.9.4.2
+Les mots de passe sont robustes mais expirent tous les 12 mois.;Partiellement conforme – Politique insuffisante;ISO 27001 A.9.4.3
+Les logs d’accès sont conservés mais jamais analysés.;Partiellement conforme – Contrôle inefficace;ISO 27001 A.12.4.1
+La séparation des tâches existe mais avec des dérogations non revues.;Partiellement conforme – Ségrégation affaiblie;ISO 27001 A.6.1.2
+Les droits sont revus mais uniquement pour 3 applications critiques.;Partiellement conforme – Revue partielle;ISO 27001 A.9.2.5
+Les comptes inactifs sont désactivés après 150 jours.;Partiellement conforme – Seuil trop élevé;ISO 27001 A.9.2.6
+Les demandes d’accès sont tracées mais seulement par e-mail.;Partiellement conforme – Traçabilité fragile;ISO 27001 A.9.2.1
+Les mots de passe sont hachés mais sans sel.;Partiellement conforme – Stockage affaibli;ISO 27001 A.10.1
+Les sessions inactives se ferment après 45 minutes.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les comptes techniques sont documentés mais non limités.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+La suppression des accès est effectuée mais parfois après plusieurs jours.;Partiellement conforme – Révocation lente;ISO 27001 A.9.2.6
+Les recertifications sont faites annuellement mais sans validation managériale.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les comptes d’urgence sont supprimés manuellement, parfois avec délai.;Partiellement conforme – Révocation imparfaite;ISO 27001 A.9.2.6
+Les accès des prestataires sont révoqués mais pas toujours à la date de fin du contrat.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.6
+Chaque accès à privilèges est revu tous les 6 mois par le responsable sécurité.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.5 / NIST AC-2 j
+Les droits d’accès sont automatiquement synchronisés avec les mouvements RH.;Conforme – Processus automatisé;ISO 27001 A.9.2.6 / COBIT DSS05
+Les comptes d’urgence nécessitent une approbation préalable avant activation.;Conforme – Contrôle d’activation;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les utilisateurs reçoivent des droits temporaires limités dans le temps.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6
+Les identifiants de connexion sont strictement personnels et non partageables.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3
+Un audit interne annuel vérifie la conformité des droits attribués.;Conforme – Vérification indépendante;ISO 27001 A.18.2.3
+Les comptes génériques sont remplacés par des comptes de service tracés.;Conforme – Gouvernance technique;ISO 27001 A.9.2.3
+La MFA est utilisée pour tous les accès à distance, y compris les utilisateurs métiers.;Conforme – Authentification renforcée;ISO 27001 A.9.4.2 / NIST IA-2
+Les mots de passe sont changés tous les 90 jours avec complexité obligatoire.;Conforme – Politique robuste;ISO 27001 A.9.4.3 / NIST IA-5
+Les sessions utilisateurs expirent après 20 minutes d’inactivité.;Conforme – Paramétrage de sécurité;ISO 27001 A.9.4.2
+Les accès des sous-traitants sont gérés par des comptes temporaires expirants.;Conforme – Contrôle des tiers;ISO 27001 A.9.2.6
+Les demandes d’accès doivent être validées par le responsable métier.;Conforme – Processus d’approbation;ISO 27001 A.9.2.1 / SOX 404
+Les droits des utilisateurs sont adaptés automatiquement lors d’un changement de poste.;Conforme – Gouvernance RH intégrée;ISO 27001 A.9.2.5
+Tous les comptes administrateurs sont individuels et surveillés.;Conforme – Responsabilité et traçabilité;ISO 27001 A.9.2.3
+Un contrôle semestriel vérifie la désactivation des comptes inactifs.;Conforme – Bonnes pratiques de suivi;ISO 27001 A.9.2.6
+Les registres d’habilitations sont exportés et signés par le RSSI.;Conforme – Gouvernance documentaire;ISO 27001 A.9.2.6
+Les revues des droits ne sont effectuées que pour certaines applications métiers.;Partiellement conforme – Couverture incomplète;ISO 27001 A.9.2.5
+Les demandes d’accès sont validées mais sans traçabilité systématique.;Partiellement conforme – Processus fragile;ISO 27001 A.9.2.1
+Les comptes inactifs sont désactivés après 6 mois.;Partiellement conforme – Seuil trop long;ISO 27001 A.9.2.6 / NIST AC-2 h
+La MFA est activée pour le VPN mais pas pour les consoles d’administration.;Partiellement conforme – Sécurité incomplète;ISO 27001 A.9.4.2
+Les mots de passe sont complexes mais ne changent qu’une fois par an.;Partiellement conforme – Politique insuffisante;ISO 27001 A.9.4.3
+La suppression des accès est faite mais manuellement et avec retard.;Partiellement conforme – Révocation tardive;ISO 27001 A.9.2.6
+Les sessions sont déconnectées après 45 minutes au lieu de 15.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les comptes techniques sont tracés mais partagés par plusieurs équipes.;Partiellement conforme – Gouvernance insuffisante;ISO 27001 A.9.2.3
+Les registres des habilitations sont mis à jour trimestriellement seulement.;Partiellement conforme – Suivi non temps réel;ISO 27001 A.9.2.6
+Les revues de droits existent mais sans validation hiérarchique.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.5
+Les comptes d’urgence sont créés avec approbation mais désactivés avec délai.;Partiellement conforme – Révocation imparfaite;ISO 27001 A.9.2.6
+Les comptes prestataires expirent mais la procédure n’est pas toujours appliquée.;Partiellement conforme – Contrôle incomplet;ISO 27001 A.9.2.6
+Les logs d’accès sont activés mais analysés seulement en cas d’incident.;Partiellement conforme – Contrôle réactif;ISO 27001 A.12.4.1
+Les demandes d’accès sont saisies dans un outil mais parfois sans validation managériale.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.1
+Les droits sont accordés sans aucune validation.;Non conforme – Autorisation absente;ISO 27001 A.9.2.1
+Les comptes d’anciens collaborateurs sont encore actifs dans plusieurs applications.;Non conforme – Risque d’usurpation;ISO 27001 A.9.2.6
+Les administrateurs utilisent un compte unique partagé.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3
+Aucun mécanisme de verrouillage n’est activé après 10 tentatives.;Non conforme – Risque de brute force;ISO 27001 A.9.4.3 / NIST AC-7
+Les droits à privilèges sont attribués sans justification.;Non conforme – Absence de contrôle;ISO 27001 A.9.1.2
+Les recertifications ne sont jamais réalisées.;Non conforme – Absence de revue;ISO 27001 A.9.2.5
+Les comptes techniques permettent des accès interactifs.;Non conforme – Risque de compromission;ISO 27001 A.9.2.3
+Les prestataires externes conservent leurs accès après la fin du contrat.;Non conforme – Risque d’accès non autorisé;ISO 27001 A.9.2.6
+Aucun suivi n’est effectué sur les comptes génériques.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.3
+Les sessions restent ouvertes tant que l’utilisateur ne se déconnecte pas manuellement.;Non conforme – Absence de sécurité de session;ISO 27001 A.9.4.2
+Les mots de passe sont enregistrés en clair dans certaines applications.;Non conforme – Failles de sécurité;ISO 27001 A.10.1
+Les identifiants par défaut des bases de données sont encore actifs.;Non conforme – Vulnérabilité critique;ISO 27001 A.9.2.4
+Les accès aux applications critiques sont accordés sans piste d’audit.;Non conforme – Absence de traçabilité;ISO 27001 A.9.2.6
+Les comptes inactifs depuis 12 mois ne sont pas supprimés.;Non conforme – Absence de contrôle;ISO 27001 A.9.2.6
+Les droits des utilisateurs ne sont pas révoqués lors d’un changement de poste.;Non conforme – Risque d’excès de privilèges;ISO 27001 A.9.2.5
+Les comptes d’urgence sont utilisés régulièrement sans justification.;Non conforme – Contrôle dévoyé;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les comptes utilisateurs sont créés uniquement via un workflow automatisé validé.;Conforme – Processus maîtrisé;ISO 27001 A.9.2.1 / COBIT DSS05
+Les comptes de service disposent de droits strictement limités à leur fonction.;Conforme – Gouvernance technique;ISO 27001 A.9.2.3 / NIST AC-6
+Un rapport mensuel des droits administrateurs est généré et contrôlé.;Conforme – Suivi périodique;ISO 27001 A.9.2.5
+La révocation des droits des prestataires est intégrée aux procédures RH.;Conforme – Processus intégré;ISO 27001 A.9.2.6
+Les comptes temporaires expirent automatiquement après la durée définie.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6
+Les droits sont attribués selon des profils métiers standardisés.;Conforme – Gouvernance d’habilitation;ISO 27001 A.9.1.2
+Les comptes inactifs sont supprimés automatiquement après 90 jours.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les demandes d’accès sont historisées dans un outil dédié.;Conforme – Traçabilité assurée;ISO 27001 A.9.2.1
+L’utilisation des comptes administrateurs est revue chaque trimestre.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.5
+Les sessions à privilèges nécessitent une double authentification.;Conforme – Sécurité accrue;ISO 27001 A.9.4.2 / NIST IA-2
+Les revues d’accès sont validées par les responsables métiers et la sécurité.;Conforme – Contrôle croisé;ISO 27001 A.9.2.5
+Les comptes génériques sont interdits dans l’organisation.;Conforme – Responsabilité renforcée;ISO 27001 A.9.2.3
+Les mots de passe des comptes techniques sont renouvelés régulièrement.;Conforme – Bonnes pratiques techniques;ISO 27001 A.10.1 / NIST IA-5
+Les habilitations sont documentées dans un référentiel central.;Conforme – Documentation maîtrisée;ISO 27001 A.9.2.6
+Les prestataires disposent de badges et d’identifiants temporaires.;Conforme – Gouvernance tiers;ISO 27001 A.9.2.6
+La ségrégation des tâches est vérifiée avant tout déploiement applicatif.;Conforme – Contrôle préventif;ISO 27001 A.6.1.2
+Les droits sont attribués sans validation hiérarchique formelle.;Non conforme – Processus absent;ISO 27001 A.9.2.1
+Les comptes d’anciens collaborateurs ne sont pas désactivés dans toutes les applications.;Non conforme – Risque d’accès orphelin;ISO 27001 A.9.2.6
+Les comptes techniques utilisent le même mot de passe sur plusieurs systèmes.;Non conforme – Failles critiques;ISO 27001 A.10.1 / NIST IA-5
+Aucun contrôle des droits admin n’est réalisé.;Non conforme – Absence de revue;ISO 27001 A.9.2.5
+La MFA est désactivée sur les consoles critiques.;Non conforme – Authentification faible;ISO 27001 A.9.4.2
+Les comptes d’urgence sont activés sans approbation préalable.;Non conforme – Gouvernance absente;ISO 27001 A.9.2.6
+Aucun mécanisme n’existe pour supprimer les comptes inactifs.;Non conforme – Contrôle absent;ISO 27001 A.9.2.6
+Les sessions restent ouvertes plus de 2 heures en inactivité.;Non conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les droits admin sont attribués par défaut lors de la création des comptes.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Aucun registre des accès n’est maintenu.;Non conforme – Traçabilité absente;ISO 27001 A.9.2.6
+Les comptes utilisateurs n’ont jamais été recertifiés.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.5
+Les accès des prestataires expirés restent actifs indéfiniment.;Non conforme – Risque tiers;ISO 27001 A.9.2.6
+Les identifiants par défaut des équipements réseau sont inchangés.;Non conforme – Vulnérabilité connue;ISO 27001 A.9.2.4
+Aucun verrouillage de compte n’est appliqué après échecs répétés.;Non conforme – Risque d’attaque brute force;ISO 27001 A.9.4.3 / NIST AC-7
+Les revues de droits couvrent uniquement les comptes métiers.;Partiellement conforme – Périmètre incomplet;ISO 27001 A.9.2.5
+Les comptes sont supprimés mais parfois plusieurs jours après le départ.;Partiellement conforme – Révocation tardive;ISO 27001 A.9.2.6
+La MFA est déployée mais uniquement sur le VPN.;Partiellement conforme – Sécurité restreinte;ISO 27001 A.9.4.2
+Les mots de passe sont robustes mais changés tous les 180 jours.;Partiellement conforme – Politique laxiste;ISO 27001 A.9.4.3
+Les logs d’accès sont générés mais consultés uniquement à la demande.;Partiellement conforme – Suivi non régulier;ISO 27001 A.12.4.1
+La ségrégation des tâches est formelle mais des exceptions fréquentes existent.;Partiellement conforme – Contrôle affaibli;ISO 27001 A.6.1.2
+Les revues de comptes sont effectuées mais sans signature managériale.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les comptes inactifs sont identifiés mais désactivés manuellement avec délai.;Partiellement conforme – Procédure lente;ISO 27001 A.9.2.6
+Les demandes d’accès sont tracées dans un fichier Excel sans validation.;Partiellement conforme – Traçabilité fragile;ISO 27001 A.9.2.1
+Les mots de passe sont hachés mais avec un algorithme obsolète.;Partiellement conforme – Sécurité affaiblie;ISO 27001 A.10.1
+Les sessions expirent après 60 minutes au lieu de 15.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les comptes techniques sont documentés mais non restreints.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.3
+La suppression des accès est effectuée mais pas toujours dans les applications locales.;Partiellement conforme – Contrôle incomplet;ISO 27001 A.9.2.6
+Les recertifications sont faites annuellement mais sans suivi des actions correctives.;Partiellement conforme – Gouvernance faible;ISO 27001 A.9.2.5
+Les comptes d’urgence sont fermés manuellement, parfois plusieurs jours après usage.;Partiellement conforme – Révocation imparfaite;ISO 27001 A.9.2.6
+Les accès des prestataires sont désactivés mais sans validation documentaire.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.6
+Les logs d’accès sont produits mais non centralisés.;Partiellement conforme – Contrôle partiel;ISO 27001 A.12.4.1
+Chaque accès est validé par deux niveaux d’approbation avant activation.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1 / SOX 404
+Les comptes administrateurs sont limités en nombre et surveillés en continu.;Conforme – Contrôle permanent;ISO 27001 A.9.2.3 / NIST AC-6
+Les droits d’accès sont automatiquement retirés à la date de fin de contrat.;Conforme – Processus automatisé;ISO 27001 A.9.2.6
+Un rapport de conformité des droits est transmis chaque trimestre au comité sécurité.;Conforme – Suivi périodique;ISO 27001 A.9.2.5
+Les identifiants par défaut sont remplacés par des mots de passe robustes dès l’installation.;Conforme – Bonnes pratiques;ISO 27001 A.9.2.4
+Les comptes inactifs sont désactivés automatiquement après 60 jours.;Conforme – Mesure préventive;ISO 27001 A.9.2.6
+Les revues de droits incluent les prestataires et les comptes techniques.;Conforme – Gouvernance étendue;ISO 27001 A.9.2.5
+Les sessions à privilèges nécessitent une authentification forte (MFA).;Conforme – Contrôle de sécurité;ISO 27001 A.9.4.2
+Tous les accès critiques sont consignés dans un SIEM centralisé.;Conforme – Traçabilité complète;ISO 27001 A.12.4.1
+Les droits métiers sont gérés via des rôles préconfigurés (RBAC).;Conforme – Gouvernance des rôles;ISO 27001 A.9.1.2
+Les demandes d’accès sont enregistrées et validées par un workflow électronique.;Conforme – Traçabilité numérique;ISO 27001 A.9.2.1
+Les comptes génériques ont été remplacés par des comptes individuels.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3
+Les accès temporaires sont désactivés automatiquement à échéance.;Conforme – Processus maîtrisé;ISO 27001 A.9.2.6
+Un suivi quotidien des droits admin est assuré par l’équipe sécurité.;Conforme – Contrôle rapproché;ISO 27001 A.9.2.5
+Les prestataires reçoivent des accès temporaires validés par contrat.;Conforme – Gestion des tiers;ISO 27001 A.9.2.6
+Les logs d’accès sont corrélés avec les événements de sécurité.;Conforme – Suivi avancé;ISO 27001 A.12.4.1
+Un double facteur est obligatoire pour les connexions aux systèmes critiques.;Conforme – Authentification renforcée;ISO 27001 A.9.4.2
+Les droits des utilisateurs sont adaptés automatiquement en cas de mobilité interne.;Conforme – Gouvernance RH;ISO 27001 A.9.2.5
+La ségrégation des tâches est vérifiée lors de chaque déploiement applicatif.;Conforme – Contrôle préventif;ISO 27001 A.6.1.2
+Les comptes de test sont créés avec accès limités et supprimés après usage.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6
+Les comptes admin partagent un mot de passe unique.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3
+Les droits à privilèges sont accordés sans justification documentée.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Aucun suivi n’est effectué sur les comptes inactifs.;Non conforme – Contrôle absent;ISO 27001 A.9.2.6
+Les recertifications d’accès n’ont pas eu lieu depuis plus de 2 ans.;Non conforme – Absence de revue;ISO 27001 A.9.2.5
+Les sessions utilisateurs restent actives indéfiniment.;Non conforme – Absence de paramétrage;ISO 27001 A.9.4.2
+Les identifiants par défaut des bases de données n’ont pas été modifiés.;Non conforme – Vulnérabilité connue;ISO 27001 A.9.2.4
+Aucun mécanisme de verrouillage après tentatives échouées.;Non conforme – Risque de brute force;ISO 27001 A.9.4.3 / NIST AC-7
+Les comptes techniques sont utilisés par plusieurs équipes sans suivi.;Non conforme – Gouvernance absente;ISO 27001 A.9.2.3
+Aucun registre des habilitations n’est tenu à jour.;Non conforme – Absence de traçabilité;ISO 27001 A.9.2.6
+Les prestataires conservent leurs accès après fin de contrat.;Non conforme – Risque tiers;ISO 27001 A.9.2.6
+Les utilisateurs métiers possèdent des droits admin par défaut.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les comptes d’urgence sont activés sans approbation préalable.;Non conforme – Processus absent;ISO 27001 A.9.2.6
+Les logs d’accès ne sont ni centralisés ni revus.;Non conforme – Absence de contrôle;ISO 27001 A.12.4.1
+Aucun changement de mot de passe n’est imposé.;Non conforme – Politique inexistante;ISO 27001 A.9.4.3
+Les comptes admin sont utilisés régulièrement à des fins non tracées.;Non conforme – Risque de compromission;ISO 27001 A.9.2.3
+Aucun audit interne n’est effectué sur les droits d’accès.;Non conforme – Absence de gouvernance;ISO 27001 A.18.2.3
+Les sessions à privilèges ne nécessitent pas de MFA.;Non conforme – Authentification faible;ISO 27001 A.9.4.2
+Les mots de passe sont stockés en clair dans un fichier partagé.;Non conforme – Failles critiques;ISO 27001 A.10.1
+Les comptes de test sont utilisés en production avec droits élevés.;Non conforme – Risque majeur;ISO 27001 A.9.2.6
+Aucun suivi des prestataires externes n’est effectué.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.6
+Les accès VPN sont accordés sans MFA.;Non conforme – Contrôle absent;ISO 27001 A.9.4.2
+Les recertifications portent uniquement sur une partie des applications.;Partiellement conforme – Couverture limitée;ISO 27001 A.9.2.5
+Les comptes inactifs sont désactivés après 180 jours.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.2.6
+Les demandes d’accès sont validées mais pas toujours documentées.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.1
+Les mots de passe sont robustes mais changés une fois par an.;Partiellement conforme – Politique faible;ISO 27001 A.9.4.3
+Les sessions expirent après 40 minutes au lieu de 15.;Partiellement conforme – Paramétrage permissif;ISO 27001 A.9.4.2
+Les comptes techniques sont documentés mais non restreints.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les logs d’accès sont produits mais non exploités régulièrement.;Partiellement conforme – Suivi insuffisant;ISO 27001 A.12.4.1
+Les prestataires sont désactivés mais parfois avec plusieurs jours de délai.;Partiellement conforme – Processus imparfait;ISO 27001 A.9.2.6
+La MFA est exigée pour les admins mais pas pour les métiers.;Partiellement conforme – Sécurité restreinte;ISO 27001 A.9.4.2
+Les droits des utilisateurs sont revus mais sans validation hiérarchique systématique.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.5
+Les comptes d’urgence sont supprimés mais parfois après plusieurs jours.;Partiellement conforme – Révocation tardive;ISO 27001 A.9.2.6
+Les demandes d’accès sont saisies mais non toujours validées.;Partiellement conforme – Contrôle incomplet;ISO 27001 A.9.2.1
+Les mots de passe sont hachés mais sans sel unique.;Partiellement conforme – Stockage affaibli;ISO 27001 A.10.1
+Les revues d’accès sont faites annuellement mais sans suivi correctif.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les comptes inactifs sont repérés mais désactivés manuellement.;Partiellement conforme – Procédure lente;ISO 27001 A.9.2.6
+Les logs d’accès sont conservés mais uniquement utilisés en cas d’incident.;Partiellement conforme – Contrôle réactif;ISO 27001 A.12.4.1
+Un contrôle trimestriel des accès VPN est validé par l’équipe sécurité.;Conforme – Gouvernance périodique;ISO 27001 A.9.2.5 / NIST AC-2 j
+Les droits métiers sont attribués uniquement via un modèle de rôles.;Conforme – RBAC appliqué;ISO 27001 A.9.1.2
+Les comptes temporaires sont suivis par un registre central et expirent automatiquement.;Conforme – Gouvernance efficace;ISO 27001 A.9.2.6
+Les prestataires reçoivent des accès temporaires limités dans le temps et tracés.;Conforme – Gestion des tiers maîtrisée;ISO 27001 A.9.2.6
+Un audit interne annuel confirme la conformité des droits admin.;Conforme – Vérification indépendante;ISO 27001 A.18.2.3
+Les comptes techniques disposent de mots de passe uniques et complexes.;Conforme – Bonnes pratiques techniques;ISO 27001 A.10.1
+Les sessions admin expirent après 15 minutes d’inactivité.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2
+La MFA est obligatoire pour les connexions SaaS critiques.;Conforme – Contrôle fort;ISO 27001 A.9.4.2
+Tous les droits sont tracés dans un référentiel central mis à jour en temps réel.;Conforme – Traçabilité complète;ISO 27001 A.9.2.6
+Les comptes d’urgence nécessitent une approbation managériale préalable.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.6
+Les droits à privilèges sont approuvés par un comité de sécurité.;Conforme – Gouvernance de haut niveau;ISO 27001 A.9.1.2
+Les revues d’accès sont semestrielles et couvrent toutes les applications.;Conforme – Gouvernance globale;ISO 27001 A.9.2.5
+Les utilisateurs reçoivent des droits limités selon leur fonction.;Conforme – Principe du moindre privilège;ISO 27001 A.9.1.2
+Les comptes génériques ont été supprimés des environnements sensibles.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3
+Les demandes d’accès sont validées dans un outil avec piste d’audit complète.;Conforme – Traçabilité numérique;ISO 27001 A.9.2.1
+Les comptes inactifs sont désactivés automatiquement après 45 jours.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6
+Les logs d’accès sont analysés chaque mois par l’équipe sécurité.;Conforme – Suivi régulier;ISO 27001 A.12.4.1
+Chaque création de compte est approuvée par le responsable métier.;Conforme – Processus d’autorisation;ISO 27001 A.9.2.1
+Les mots de passe sont hachés et salés avec un algorithme robuste.;Conforme – Stockage sécurisé;ISO 27001 A.10.1
+Les comptes d’urgence sont désactivés automatiquement après usage.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6
+Les utilisateurs métiers possèdent des droits admin non justifiés.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les comptes d’anciens prestataires sont toujours actifs.;Non conforme – Risque tiers;ISO 27001 A.9.2.6
+Aucun audit des habilitations n’est réalisé.;Non conforme – Gouvernance absente;ISO 27001 A.18.2.3
+Les sessions utilisateurs restent ouvertes indéfiniment.;Non conforme – Absence de sécurité de session;ISO 27001 A.9.4.2
+Les identifiants par défaut des équipements réseau sont encore valides.;Non conforme – Vulnérabilité critique;ISO 27001 A.9.2.4
+Les comptes admin sont partagés entre plusieurs personnes.;Non conforme – Absence de responsabilité individuelle;ISO 27001 A.9.2.3
+Aucun verrouillage après tentatives échouées n’est activé.;Non conforme – Risque d’attaque brute force;ISO 27001 A.9.4.3 / NIST AC-7
+Les logs d’accès ne sont jamais consultés.;Non conforme – Absence de suivi;ISO 27001 A.12.4.1
+Les comptes d’urgence sont utilisés sans justification.;Non conforme – Contrôle inexistant;ISO 27001 A.9.2.6
+Les comptes de test en production possèdent des droits étendus.;Non conforme – Risque de compromission;ISO 27001 A.9.2.6
+Les utilisateurs changent rarement leurs mots de passe.;Non conforme – Politique absente;ISO 27001 A.9.4.3
+Aucun processus de suppression des comptes inactifs n’est appliqué.;Non conforme – Risque de comptes orphelins;ISO 27001 A.9.2.6
+Les prestataires externes conservent leurs accès après départ.;Non conforme – Risque de compromission;ISO 27001 A.9.2.6
+Les droits admin sont accordés par défaut à la création des comptes.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Aucun registre central des habilitations n’est maintenu.;Non conforme – Absence de traçabilité;ISO 27001 A.9.2.6
+Les comptes techniques partagent le même mot de passe.;Non conforme – Vulnérabilité majeure;ISO 27001 A.10.1
+Les recertifications ne couvrent que certaines applications.;Non conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les sessions admin ne nécessitent pas de MFA.;Non conforme – Authentification faible;ISO 27001 A.9.4.2
+Aucun suivi n’est assuré sur les comptes génériques.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.3
+Les droits des utilisateurs ne sont jamais revus.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.5
+Les mots de passe sont stockés en clair dans la base de données.;Non conforme – Failles critiques;ISO 27001 A.10.1
+Les comptes utilisateurs sont créés sans validation.;Non conforme – Absence d’autorisation;ISO 27001 A.9.2.1
+Les logs d’accès ne sont pas centralisés.;Non conforme – Contrôle absent;ISO 27001 A.12.4.1
+Les comptes inactifs depuis un an restent actifs.;Non conforme – Risque élevé;ISO 27001 A.9.2.6
+Les droits admin ne sont jamais justifiés ni documentés.;Non conforme – Absence de justification;ISO 27001 A.9.1.2
+Les sessions utilisateurs n’expirent pas.;Non conforme – Paramétrage absent;ISO 27001 A.9.4.2
+Les recertifications sont effectuées mais seulement sur les comptes métiers.;Partiellement conforme – Couverture limitée;ISO 27001 A.9.2.5
+Les comptes inactifs sont désactivés après 120 jours.;Partiellement conforme – Seuil trop long;ISO 27001 A.9.2.6
+Les demandes d’accès sont validées mais rarement tracées.;Partiellement conforme – Traçabilité faible;ISO 27001 A.9.2.1
+Les mots de passe sont robustes mais changés seulement tous les 180 jours.;Partiellement conforme – Politique faible;ISO 27001 A.9.4.3
+Les sessions expirent après 30 minutes au lieu de 15.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les comptes techniques sont suivis mais non limités en droits.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les logs d’accès sont générés mais exploités seulement en cas d’incident.;Partiellement conforme – Contrôle réactif;ISO 27001 A.12.4.1
+Les prestataires sont désactivés mais parfois avec retard.;Partiellement conforme – Gouvernance imparfaite;ISO 27001 A.9.2.6
+La MFA est activée pour les administrateurs mais pas pour les utilisateurs métiers.;Partiellement conforme – Sécurité restreinte;ISO 27001 A.9.4.2
+Les revues d’accès sont faites mais sans validation managériale.;Partiellement conforme – Gouvernance faible;ISO 27001 A.9.2.5
+Les comptes d’urgence sont fermés mais parfois plusieurs jours après usage.;Partiellement conforme – Révocation imparfaite;ISO 27001 A.9.2.6
+Les demandes d’accès sont tracées mais validées a posteriori.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.1
+Les mots de passe sont hachés mais avec un algorithme obsolète.;Partiellement conforme – Sécurité affaiblie;ISO 27001 A.10.1
+Les revues de droits annuelles ne couvrent pas les prestataires.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.5
+Les comptes inactifs sont identifiés mais désactivés manuellement.;Partiellement conforme – Procédure lente;ISO 27001 A.9.2.6
+Les logs d’accès sont conservés mais jamais corrélés avec d’autres événements.;Partiellement conforme – Contrôle limité;ISO 27001 A.12.4.1
+Les droits admin sont revus mais sans documentation formelle.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les sessions utilisateurs expirent après 60 minutes.;Partiellement conforme – Paramétrage permissif;ISO 27001 A.9.4.2
+Les comptes techniques sont documentés mais partagés par plusieurs équipes.;Partiellement conforme – Gouvernance affaiblie;ISO 27001 A.9.2.3
+Les membres des groupes Active Directory sont revus chaque trimestre.;Conforme – Revue des groupes utilisateurs;ISO 27001 A.9.2.5
+Les attributions de droits via groupes AD sont documentées et validées.;Conforme – Gouvernance indirecte;ISO 27001 A.9.2.1
+Un processus automatique retire les droits obsolètes lors d’un changement de poste.;Conforme – Gouvernance JML complète;ISO 27001 A.9.2.6
+Les clés API sont régénérées automatiquement tous les 90 jours.;Conforme – Rotation sécurisée;NIST IA-5 f
+Les comptes de service non interactifs utilisent des mots de passe stockés dans un coffre-fort.;Conforme – Gestion sécurisée;ISO 27001 A.9.2.3
+Les accès SSO sont protégés par MFA via l’IdP.;Conforme – Authentification centralisée;ISO 27001 A.9.4.2 / NIST IA-2
+Les preuves d’approbation des accès sont conservées 7 ans.;Conforme – Exigence réglementaire;SOX 404
+Les boîtes mail partagées sont attribuées nominativement et recertifiées.;Conforme – Gouvernance messagerie;ISO 27001 A.9.2.3
+L’accès aux applications SaaS se fait via un IdP unique avec logs centralisés.;Conforme – Gouvernance SaaS;ISO 27001 A.9.2.6
+Les tokens OAuth sont limités en durée et surveillés.;Conforme – Sécurité des API;NIST IA-5 f
+Aucun suivi n’est effectué sur les membres des groupes Active Directory.;Non conforme – Risque d’excès de privilèges;ISO 27001 A.9.2.5
+Les utilisateurs conservent leurs anciens droits après un changement de poste.;Non conforme – Absence de processus mover;ISO 27001 A.9.2.6
+Les clés API expirées restent actives dans les systèmes.;Non conforme – Risque de compromission;NIST IA-5 f
+Les comptes de service permettent des connexions interactives.;Non conforme – Risque majeur;ISO 27001 A.9.2.3
+L’accès aux applications SaaS se fait sans MFA.;Non conforme – Contrôle absent;ISO 27001 A.9.4.2
+Aucune conservation des preuves d’approbation n’est prévue.;Non conforme – Non-conformité réglementaire;SOX 404
+Les boîtes partagées sont accessibles par mot de passe générique.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3
+Les tokens OAuth n’expirent pas et sont stockés en clair.;Non conforme – Failles critiques;NIST IA-5
+Les sessions SSO ne sont pas limitées en durée.;Non conforme – Risque de session persistante;ISO 27001 A.9.4.2
+Les utilisateurs peuvent rejoindre des groupes AD sans validation.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.1
+Les revues des groupes AD sont faites mais seulement une fois tous les 2 ans.;Partiellement conforme – Fréquence insuffisante;ISO 27001 A.9.2.5
+Les movers voient leurs nouveaux droits appliqués mais conservent les anciens.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.6
+Les clés API sont changées tous les 12 mois.;Partiellement conforme – Rotation trop faible;NIST IA-5
+Les comptes de service sont documentés mais sans limitation stricte.;Partiellement conforme – Gouvernance insuffisante;ISO 27001 A.9.2.3
+La MFA est activée pour le SSO mais pas pour toutes les applis SaaS.;Partiellement conforme – Sécurité incomplète;ISO 27001 A.9.4.2
+Les preuves d’approbation sont conservées mais sans durée formalisée.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les boîtes partagées sont attribuées mais rarement recertifiées.;Partiellement conforme – Processus incomplet;ISO 27001 A.9.2.3
+Les tokens OAuth expirent mais avec une durée trop longue (1 an).;Partiellement conforme – Sécurité affaiblie;NIST IA-5
+Les sessions SSO expirent mais après 8h au lieu de 30 min.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les logs SSO existent mais ne sont pas corrélés avec les logs applicatifs.;Partiellement conforme – Traçabilité partielle;ISO 27001 A.12.4.1
+Les comptes génériques d’application sont suivis mais non limités en usage.;Partiellement conforme – Gouvernance faible;ISO 27001 A.9.2.3
+Les utilisateurs conservent parfois des accès SaaS après départ.;Non conforme – Risque tiers;ISO 27001 A.9.2.6
+Les groupes AD incluent encore des utilisateurs inactifs.;Non conforme – Risque d’accès non autorisé;ISO 27001 A.9.2.5
+Les clés API sont stockées dans du code source non sécurisé.;Non conforme – Risque de fuite;NIST IA-5
+Les tokens OAuth ne sont pas révoqués après désactivation du compte.;Non conforme – Risque de persistance d’accès;ISO 27001 A.9.2.6
+Les comptes de service ne sont pas recertifiés.;Non conforme – Absence de revue;ISO 27001 A.9.2.3
+Aucune piste d’audit n’existe sur les sessions SSO.;Non conforme – Absence de traçabilité;ISO 27001 A.12.4.1
+Les movers voient leurs droits corrigés mais avec délai d’une semaine.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les boîtes partagées sont revues mais uniquement une fois par an.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.9.2.3
+Les preuves d’approbation sont stockées mais sans contrôle d’intégrité.;Partiellement conforme – Gouvernance faible;SOX 404
+Les sessions SSO expirent mais seulement après 12h.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les tokens OAuth sont révoqués manuellement, parfois avec retard.;Partiellement conforme – Gouvernance imparfaite;NIST IA-5
+Les droits via groupes AD sont documentés mais pas toujours validés.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.1
+Les utilisateurs conservent parfois des droits SaaS après mobilité interne.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.6
+Les comptes de service sont utilisés pour des tâches non prévues.;Non conforme – Excès d’usage;ISO 27001 A.9.2.3
+Les clés API sont partagées entre plusieurs équipes.;Non conforme – Absence de responsabilité;NIST IA-5
+Les tokens OAuth sont générés sans limite de durée.;Non conforme – Risque de compromission;NIST IA-5
+Les sessions SSO ne sont jamais déconnectées automatiquement.;Non conforme – Risque de session persistante;ISO 27001 A.9.4.2
+Les movers conservent des droits sensibles après changement de poste.;Non conforme – Risque de privilèges excessifs;ISO 27001 A.9.2.6
+Les boîtes partagées n’ont jamais été recertifiées.;Non conforme – Absence de revue;ISO 27001 A.9.2.3
+Les preuves d’approbation ne sont pas horodatées.;Non conforme – Gouvernance défaillante;SOX 404
+Les utilisateurs rejoignent des groupes AD sans piste d’audit.;Non conforme – Absence de traçabilité;ISO 27001 A.9.2.1
+Les comptes SaaS restent actifs après résiliation du contrat client.;Non conforme – Risque externe;ISO 27001 A.9.2.6
+Les sessions SSO expirent mais après 4h, sans option de configuration.;Partiellement conforme – Paramétrage incomplet;ISO 27001 A.9.4.2
+Les preuves d’approbation sont conservées mais non accessibles facilement.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les groupes AD sont revus mais uniquement pour certains OU (organizational units).;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les clés API sont renouvelées manuellement, parfois avec retard.;Partiellement conforme – Gouvernance imparfaite;NIST IA-5
+Les tokens OAuth sont configurés pour expirer mais sans rotation automatique.;Partiellement conforme – Sécurité limitée;NIST IA-5
+Les comptes de service sont désactivés mais parfois après plusieurs mois.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les movers voient leurs droits adaptés mais pas validés par les managers.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les droits d’accès sont vérifiés tous les trimestres par l’équipe sécurité.;Conforme – Bonnes pratiques;ISO 27001 A.9.2.5 / COBIT DSS05
+Chaque création de compte est validée par un responsable hiérarchique.;Conforme – Contrôle d’approbation;ISO 27001 A.9.2.1 / NIST AC-2 b
+Les accès administrateurs sont attribués de manière nominative et suivis.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3 / NIST AC-6
+Les comptes inactifs sont automatiquement désactivés après 60 jours.;Conforme – Gestion proactive;ISO 27001 A.9.2.6 / NIST AC-2 h
+Une MFA est exigée pour toutes les connexions à distance.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2 / NIST IA-2
+La suppression des comptes intervient immédiatement après le départ d’un collaborateur.;Conforme – Processus réactif;ISO 27001 A.9.2.6 / SOX 404
+Un registre des droits d’accès est tenu à jour en temps réel.;Conforme – Traçabilité;ISO 27001 A.9.2.6 / COBIT DSS05
+L’usage de comptes génériques est interdit dans l’organisation.;Conforme – Responsabilisation;ISO 27001 A.9.2.3 / NIST AC-2
+Les clés API sont stockées dans un coffre-fort numérique.;Conforme – Gestion sécurisée;NIST IA-5 f
+Les prestataires voient leurs droits révoqués dès la fin du contrat.;Conforme – Gouvernance tiers;ISO 27001 A.9.2.6 / COBIT DSS05
+Les utilisateurs doivent justifier chaque demande d’accès critique.;Conforme – Justification obligatoire;ISO 27001 A.9.2.1
+La révision des groupes Active Directory est effectuée chaque trimestre.;Conforme – Revue régulière;ISO 27001 A.9.2.5
+Les comptes de service sont associés à des tâches précises et limitées.;Conforme – Bonne pratique IT;ISO 27001 A.9.2.3
+Tous les accès sont tracés et horodatés dans des journaux centralisés.;Conforme – Traçabilité complète;ISO 27001 A.12.4.1
+Un contrôle d’accès physique est en place pour les salles serveurs.;Conforme – Contrôle physique;ISO 27001 A.11.1.1 / NIST PE-3
+Les accès aux applications SaaS passent par un IdP sécurisé.;Conforme – Gouvernance SaaS;ISO 27001 A.9.2.6
+Les permissions sont accordées selon le principe du moindre privilège.;Conforme – Principe de sécurité;ISO 27001 A.9.1.2 / NIST AC-6
+Les tokens OAuth expirent automatiquement après 30 minutes.;Conforme – Sécurité des API;NIST IA-5
+Une revue indépendante des droits est réalisée par l’équipe d’audit interne.;Conforme – Gouvernance efficace;ISO 27001 A.9.2.5
+Les accès temporaires d’urgence sont supprimés dès la fin de l’intervention.;Conforme – Contrôle compensatoire;ISO 27001 A.9.2.6 / NIST AC-2 d
+Les comptes dormants sont systématiquement désactivés après détection.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les sessions inactives sont coupées automatiquement après 15 minutes.;Conforme – Bonnes pratiques de session;ISO 27001 A.9.4.2
+Chaque création de compte nécessite une double validation.;Conforme – Sécurité renforcée;ISO 27001 A.9.2.1
+Les utilisateurs doivent renouveler leur mot de passe tous les 90 jours.;Conforme – Bonnes pratiques de mot de passe;ISO 27001 A.9.4.3 / NIST IA-5
+Les logs d’accès sont analysés mensuellement par l’équipe sécurité.;Conforme – Traçabilité régulière;ISO 27001 A.12.4.1
+Les boîtes partagées sont attribuées nominativement et recertifiées.;Conforme – Responsabilisation;ISO 27001 A.9.2.3
+Les clés SSH sont renouvelées tous les 6 mois.;Conforme – Gestion sécurisée;NIST IA-5
+Un processus clair de demande d’accès est disponible pour tous.;Conforme – Gouvernance transparente;ISO 27001 A.9.2.1
+L’authentification biométrique est activée pour les accès critiques.;Conforme – Sécurité avancée;ISO 27001 A.9.4.2
+Les droits d’accès aux applications critiques sont revus semestriellement.;Conforme – Bonnes pratiques;ISO 27001 A.9.2.5
+Les comptes orphelins sont détectés et supprimés sous 24 heures.;Conforme – Réactivité;ISO 27001 A.9.2.6
+Les comptes à privilèges nécessitent un enregistrement vidéo des sessions.;Conforme – Contrôle renforcé;ISO 27001 A.12.4.1
+La création des droits est intégrée dans un workflow automatisé.;Conforme – Gouvernance automatisée;ISO 27001 A.9.2.1
+La gestion des accès suit une matrice de responsabilités (RACI).;Conforme – Gouvernance claire;COBIT DSS05
+Les comptes de test sont supprimés après chaque projet.;Conforme – Hygiène IT;ISO 27001 A.9.2.6
+Un inventaire des utilisateurs est tenu à jour en continu.;Conforme – Suivi complet;ISO 27001 A.9.2.6
+Les certificats expirés sont automatiquement révoqués.;Conforme – Gestion sécurisée;ISO 27001 A.10.1
+Un comité valide chaque accès exceptionnel.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1
+Les accès aux bases de données sont limités aux administrateurs autorisés.;Conforme – Bonnes pratiques;ISO 27001 A.9.1.2
+Un système PAM est déployé pour gérer les accès privilégiés.;Conforme – Gestion des privilèges;ISO 27001 A.9.2.3
+Les preuves d’approbation des accès sont archivées 7 ans.;Conforme – Conformité réglementaire;SOX 404
+Les utilisateurs reçoivent une notification lors de tout changement de droits.;Conforme – Transparence;ISO 27001 A.9.2.6
+L’accès VPN requiert une authentification forte.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2
+Les accès SaaS sont gérés par l’IdP d’entreprise.;Conforme – Gouvernance SaaS;ISO 27001 A.9.2.6
+Les employés ne peuvent pas créer de comptes locaux.;Conforme – Sécurité organisationnelle;ISO 27001 A.9.2.1
+Les droits hérités sont clairement documentés et validés.;Conforme – Gouvernance documentaire;ISO 27001 A.9.2.6
+Les revues d’accès sont tracées et conservées dans les archives.;Conforme – Traçabilité;ISO 27001 A.12.4.1
+Les comptes de service n’ont pas de privilèges d’administration.;Conforme – Principe du moindre privilège;ISO 27001 A.9.2.3
+Les logs d’authentification sont corrélés avec le SIEM.;Conforme – Supervision efficace;ISO 27001 A.12.4.1
+La révocation des accès est déclenchée automatiquement par le workflow RH.;Conforme – Gouvernance automatisée;ISO 27001 A.9.2.6
+Les accès cloud sont gérés de manière centralisée.;Conforme – Bonnes pratiques cloud;ISO 27001 A.9.2.6
+Les tentatives d’accès échouées sont limitées à 5 avant blocage.;Conforme – Contrôle de verrouillage;ISO 27001 A.9.4.3 / NIST AC-7
+Les utilisateurs doivent justifier les accès exceptionnels.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.1
+Les groupes AD critiques sont revus mensuellement.;Conforme – Revue renforcée;ISO 27001 A.9.2.5
+Les sessions RDP administrateurs sont enregistrées.;Conforme – Contrôle des privilèges;ISO 27001 A.12.4.1
+Les accès sont définis par rôle métier (RBAC).;Conforme – Gouvernance par rôle;ISO 27001 A.9.1.2
+Les comptes invités sont désactivés après 30 jours.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.6
+Les privilèges élevés nécessitent une approbation multi-niveaux.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1
+Les comptes d’application sont protégés par rotation automatique de mot de passe.;Conforme – Gestion sécurisée;ISO 27001 A.9.2.3
+Les droits sur les fichiers sensibles sont revus trimestriellement.;Conforme – Gouvernance documentaire;ISO 27001 A.9.2.6
+L’IdP central gère l’ensemble des accès SaaS.;Conforme – Gouvernance SaaS;ISO 27001 A.9.2.6
+Les connexions VPN doivent utiliser un poste géré.;Conforme – Contrôle technique;NIST AC-17
+Les preuves d’accès sont disponibles pour les audits externes.;Conforme – Transparence;SOX 404
+L’accès root est interdit sauf procédure d’urgence.;Conforme – Gouvernance critique;ISO 27001 A.9.2.3
+Les sessions SSH sont monitorées en continu.;Conforme – Supervision;ISO 27001 A.12.4.1
+Les comptes dormants déclenchent une alerte automatique.;Conforme – Détection proactive;ISO 27001 A.9.2.6
+Chaque employé signe une charte de gestion des accès.;Conforme – Gouvernance organisationnelle;ISO 27001 A.7.2.2
+Les accès critiques sont soumis à une rotation mensuelle des mots de passe.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.3
+L’équipe sécurité valide toute élévation de privilège.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.1
+Les droits sont systématiquement alignés avec le rôle métier.;Conforme – Principe du moindre privilège;ISO 27001 A.9.1.2
+Aucun processus formalisé de revue des droits n’est en place.;Non conforme – Absence de contrôle;ISO 27001 A.9.2.5 / SOX 404
+Les droits d’accès ne sont pas revus depuis plus de deux ans.;Non conforme – Gouvernance défaillante;ISO 27001 A.9.2.5
+Les comptes génériques sont utilisés par plusieurs utilisateurs sans suivi.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3 / NIST AC-2
+Les sessions restent actives indéfiniment sans déconnexion automatique.;Non conforme – Risque de session persistante;ISO 27001 A.9.4.2
+Les mots de passe sont stockés en clair dans les bases de données.;Non conforme – Failles majeures;ISO 27001 A.10.1 / NIST IA-5
+Aucun mécanisme n’existe pour désactiver les comptes inactifs.;Non conforme – Risque de compromission;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les accès administrateurs sont partagés entre plusieurs personnes.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3
+Les utilisateurs conservent leurs droits après avoir changé de poste.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.6
+Aucun contrôle n’existe sur l’utilisation des clés API.;Non conforme – Risque de fuite;NIST IA-5 f
+Les comptes orphelins restent actifs plusieurs mois après le départ.;Non conforme – Risque d’accès non autorisé;ISO 27001 A.9.2.6
+Les accès VPN ne requièrent pas d’authentification forte.;Non conforme – Contrôle absent;ISO 27001 A.9.4.2
+Les prestataires conservent leurs accès après la fin de mission.;Non conforme – Gouvernance tiers défaillante;ISO 27001 A.9.2.6 / NIST AC-2 g
+Aucune revue des groupes Active Directory n’est effectuée.;Non conforme – Risque de privilèges excessifs;ISO 27001 A.9.2.5
+Les demandes d’accès sont validées oralement sans justification écrite.;Non conforme – Absence de traçabilité;SOX 404 / ISO 27001 A.9.2.1
+Les tokens OAuth sont créés sans date d’expiration.;Non conforme – Risque critique;NIST IA-5
+Les utilisateurs rejoignent des groupes AD sans validation.;Non conforme – Absence de gouvernance;ISO 27001 A.9.2.1
+Les comptes de service permettent des connexions interactives.;Non conforme – Risque majeur;ISO 27001 A.9.2.3
+Aucun suivi des accès SaaS n’est réalisé.;Non conforme – Gouvernance cloud défaillante;ISO 27001 A.9.2.6
+Les preuves d’approbation d’accès ne sont pas conservées.;Non conforme – Absence de conformité réglementaire;SOX 404
+Les mots de passe ne sont pas renouvelés et restent permanents.;Non conforme – Absence de politique;ISO 27001 A.9.4.3
+Les clés SSH sont partagées entre plusieurs équipes.;Non conforme – Absence de responsabilité;NIST IA-5
+Les logs d’accès ne sont ni collectés ni conservés.;Non conforme – Absence de journalisation;ISO 27001 A.12.4.1
+Les comptes invités restent actifs sans limite de durée.;Non conforme – Risque d’accès non autorisé;ISO 27001 A.9.2.6
+Aucun processus d’urgence n’encadre les accès temporaires.;Non conforme – Risque critique;ISO 27001 A.9.2.6
+Les certificats expirés ne sont pas révoqués.;Non conforme – Risque technique;ISO 27001 A.10.1
+Les sessions administrateurs ne sont pas tracées.;Non conforme – Absence de supervision;ISO 27001 A.12.4.1
+Les droits des utilisateurs ne sont pas alignés avec leurs rôles métiers.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les logs SSO ne sont pas activés.;Non conforme – Absence de traçabilité;ISO 27001 A.12.4.1
+Les comptes d’application ne sont pas gérés ni recertifiés.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.3
+Aucun inventaire central des comptes utilisateurs n’existe.;Non conforme – Gouvernance défaillante;ISO 27001 A.9.2.6
+Les clés API sont stockées dans du code source non sécurisé.;Non conforme – Risque de fuite;NIST IA-5
+Les sessions SSO ne sont jamais limitées dans le temps.;Non conforme – Risque de persistance;ISO 27001 A.9.4.2
+Aucun mécanisme de verrouillage de compte après tentatives échouées.;Non conforme – Contrôle absent;ISO 27001 A.9.4.3 / NIST AC-7
+Les comptes administrateurs sont utilisés comme comptes personnels.;Non conforme – Absence de séparation;ISO 27001 A.9.2.3
+Les prestataires conservent des accès non tracés aux environnements critiques.;Non conforme – Gouvernance tiers défaillante;ISO 27001 A.9.2.6
+Les sessions SSH ne sont pas surveillées.;Non conforme – Absence de supervision;ISO 27001 A.12.4.1
+Les mots de passe sont envoyés par email sans chiffrement.;Non conforme – Failles critiques;ISO 27001 A.10.1
+Les demandes d’accès ne nécessitent aucune justification.;Non conforme – Gouvernance défaillante;ISO 27001 A.9.2.1
+Aucun système PAM n’est déployé pour gérer les accès privilégiés.;Non conforme – Risque critique;ISO 27001 A.9.2.3
+Les comptes dormants ne déclenchent aucune alerte.;Non conforme – Absence de détection;ISO 27001 A.9.2.6
+L’accès root est utilisé par plusieurs personnes sans suivi.;Non conforme – Absence de responsabilité;ISO 27001 A.9.2.3
+Les utilisateurs disposent d’accès permanents à des ressources critiques.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les logs d’authentification ne sont pas centralisés.;Non conforme – Gouvernance déficiente;ISO 27001 A.12.4.1
+Les comptes SaaS restent actifs après départ d’un employé.;Non conforme – Gouvernance cloud défaillante;ISO 27001 A.9.2.6
+Les sessions RDP ne sont pas enregistrées.;Non conforme – Absence de contrôle;ISO 27001 A.12.4.1
+Les tokens OAuth sont stockés en clair.;Non conforme – Risque critique;NIST IA-5
+Les droits des prestataires ne sont jamais révoqués.;Non conforme – Gouvernance tiers défaillante;ISO 27001 A.9.2.6
+Aucun suivi n’existe sur les accès critiques aux bases de données.;Non conforme – Absence de contrôle;ISO 27001 A.9.1.2
+Les utilisateurs disposent de droits supérieurs à leurs besoins.;Non conforme – Excès de privilèges;ISO 27001 A.9.1.2
+Les comptes techniques sont utilisés sans restriction.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.3
+Aucun test de révocation n’a été réalisé dans les 12 derniers mois.;Non conforme – Gouvernance défaillante;ISO 27001 A.9.2.6
+Les comptes de test restent actifs en production.;Non conforme – Risque critique;ISO 27001 A.9.2.6
+Les accès aux applications SaaS ne passent pas par l’IdP.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.6
+Les logs d’accès VPN ne sont pas collectés.;Non conforme – Absence de traçabilité;ISO 27001 A.12.4.1
+Aucun suivi des élévations de privilèges n’est en place.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.3
+Les utilisateurs utilisent encore des identifiants par défaut.;Non conforme – Failles critiques;ISO 27001 A.9.2.4 / NIST IA-5 f
+Les comptes génériques ne sont pas surveillés.;Non conforme – Absence de supervision;ISO 27001 A.9.2.3
+Les sessions web ne sont pas limitées en durée.;Non conforme – Risque de persistance;ISO 27001 A.9.4.2
+Les justificatifs d’accès ne sont pas archivés.;Non conforme – Absence de traçabilité;SOX 404
+Les comptes de service ne sont pas différenciés des comptes utilisateurs.;Non conforme – Mauvaise gouvernance;ISO 27001 A.9.2.3
+Les accès administrateurs ne nécessitent pas de double validation.;Non conforme – Gouvernance insuffisante;ISO 27001 A.9.2.1
+Aucun suivi des accès externes n’est mis en œuvre.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.6
+Les logs d’accès sont effacés après une semaine.;Non conforme – Rétention insuffisante;ISO 27001 A.12.4.1
+Les certificats non utilisés restent valides indéfiniment.;Non conforme – Risque technique;ISO 27001 A.10.1
+Les sessions VPN ne sont pas journalisées.;Non conforme – Absence de traçabilité;ISO 27001 A.12.4.1
+Les comptes invités ne sont jamais supprimés.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.6
+Les mots de passe ne respectent aucune règle de complexité.;Non conforme – Absence de politique;ISO 27001 A.9.4.3
+Les sessions administrateurs se font sans journalisation.;Non conforme – Absence de contrôle;ISO 27001 A.12.4.1
+Les droits d’accès aux fichiers sensibles ne sont pas contrôlés.;Non conforme – Risque de fuite;ISO 27001 A.9.1.2
+Les accès critiques ne nécessitent aucune approbation préalable.;Non conforme – Gouvernance déficiente;ISO 27001 A.9.2.1
+Les comptes SaaS sont créés sans validation.;Non conforme – Gouvernance cloud défaillante;ISO 27001 A.9.2.1
+Les comptes API sont partagés entre plusieurs applications.;Non conforme – Risque de compromission;NIST IA-5
+Les revues des droits sont effectuées mais seulement une fois par an.;Partiellement conforme – Fréquence insuffisante;ISO 27001 A.9.2.5
+Les comptes inactifs sont désactivés mais seulement après 180 jours.;Partiellement conforme – Délai trop long;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les accès administrateurs sont nominatifs mais sans revue régulière.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+La MFA est activée mais uniquement pour les accès distants.;Partiellement conforme – Couverture partielle;ISO 27001 A.9.4.2
+Les clés API sont renouvelées mais seulement tous les 12 mois.;Partiellement conforme – Rotation insuffisante;NIST IA-5 f
+Les boîtes partagées sont attribuées nominativement mais rarement recertifiées.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.9.2.3
+Les comptes prestataires sont révoqués mais parfois avec plusieurs jours de délai.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les logs d’accès sont collectés mais rarement analysés.;Partiellement conforme – Traçabilité limitée;ISO 27001 A.12.4.1
+Les sessions inactives expirent mais après 2 heures.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les demandes d’accès sont validées mais sans preuve documentaire systématique.;Partiellement conforme – Validation non tracée;ISO 27001 A.9.2.1
+Les comptes de service sont documentés mais utilisés par plusieurs applications.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les revues des groupes AD sont réalisées mais uniquement pour les OU critiques.;Partiellement conforme – Périmètre limité;ISO 27001 A.9.2.5
+Les justificatifs d’accès sont conservés mais non horodatés.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les sessions administrateurs sont enregistrées mais sans supervision en temps réel.;Partiellement conforme – Contrôle limité;ISO 27001 A.12.4.1
+Les certificats expirés sont révoqués mais parfois avec retard.;Partiellement conforme – Gouvernance imparfaite;ISO 27001 A.10.1
+Les accès VPN nécessitent un mot de passe fort mais pas de MFA.;Partiellement conforme – Authentification faible;ISO 27001 A.9.4.2
+Les comptes invités expirent mais après 6 mois.;Partiellement conforme – Délai trop long;ISO 27001 A.9.2.6
+Les logs SSO existent mais ne couvrent pas toutes les applications.;Partiellement conforme – Traçabilité partielle;ISO 27001 A.12.4.1
+Les utilisateurs doivent changer leur mot de passe mais seulement tous les 12 mois.;Partiellement conforme – Politique faible;ISO 27001 A.9.4.3
+Les comptes de test sont supprimés mais parfois plusieurs semaines après usage.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les revues d’accès incluent les métiers mais pas les comptes techniques.;Partiellement conforme – Périmètre incomplet;ISO 27001 A.9.2.5
+Les accès aux bases de données sont limités mais pas systématiquement revus.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.1.2
+Les sessions RDP administrateurs sont journalisées mais pas consultées.;Partiellement conforme – Contrôle non exploité;ISO 27001 A.12.4.1
+Les tokens OAuth expirent mais avec une durée trop longue (1 an).;Partiellement conforme – Sécurité affaiblie;NIST IA-5
+Les comptes SaaS sont révoqués mais parfois après plusieurs jours.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les accès exceptionnels nécessitent une validation mais pas toujours documentée.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.1
+Les droits métiers sont révisés mais pas les droits administrateurs.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les logs d’accès sont centralisés mais non corrélés.;Partiellement conforme – Supervision limitée;ISO 27001 A.12.4.1
+Les prestataires externes sont suivis mais pas systématiquement désactivés à temps.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les comptes génériques sont surveillés mais restent autorisés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les sessions SSH expirent mais après 4h.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les justificatifs d’approbation existent mais pas pour tous les accès.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les clés SSH sont renouvelées mais seulement tous les 2 ans.;Partiellement conforme – Rotation trop faible;NIST IA-5
+Les comptes orphelins sont détectés mais supprimés avec retard.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les utilisateurs doivent signer une charte mais elle n’est pas mise à jour régulièrement.;Partiellement conforme – Gouvernance obsolète;ISO 27001 A.7.2.2
+Les sessions web expirent mais après 2h d’inactivité.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les comptes d’application sont recensés mais sans validation hiérarchique.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.3
+Les droits hérités sont documentés mais rarement vérifiés.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les logs VPN existent mais ne sont consultés qu’en cas d’incident.;Partiellement conforme – Supervision réactive;ISO 27001 A.12.4.1
+Les certificats sont suivis mais le processus de révocation n’est pas automatisé.;Partiellement conforme – Gouvernance manuelle;ISO 27001 A.10.1
+Les comptes invités expirent automatiquement mais après 90 jours.;Partiellement conforme – Délai excessif;ISO 27001 A.9.2.6
+Les revues AD sont faites mais seulement sur les comptes métiers.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les justificatifs d’accès sont archivés mais non vérifiés.;Partiellement conforme – Gouvernance limitée;SOX 404
+Les comptes prestataires sont révoqués mais sans contrôle documentaire.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les droits des applications critiques sont revus mais sans validation indépendante.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.5
+Les sessions administrateurs expirent mais après 6h.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les logs SSO sont collectés mais non corrélés aux logs applicatifs.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.12.4.1
+Les comptes techniques sont surveillés mais non recertifiés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les mots de passe sont hachés mais sans sel.;Partiellement conforme – Sécurité incomplète;ISO 27001 A.10.1
+Les accès cloud sont gérés par l’IdP mais certaines applis sont exclues.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.6
+Les tokens OAuth sont révoqués mais avec délai.;Partiellement conforme – Gouvernance tardive;NIST IA-5
+Les comptes orphelins sont désactivés mais non supprimés.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les sessions RDP expirent mais après 8h.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les accès d’urgence sont documentés mais non systématiquement supprimés après usage.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.9.2.6
+Les logs VPN sont collectés mais non revus régulièrement.;Partiellement conforme – Supervision limitée;ISO 27001 A.12.4.1
+Les certificats sont renouvelés mais parfois après expiration.;Partiellement conforme – Gouvernance imparfaite;ISO 27001 A.10.1
+Les comptes SaaS sont désactivés mais non supprimés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.6
+Les accès critiques sont validés mais sans approbation multi-niveaux.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.9.2.1
+Les logs d’authentification sont collectés mais sans corrélation.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.12.4.1
+Les droits d’accès sont revus trimestriellement avec validation managériale.;Conforme – Bonnes pratiques de revue;ISO 27001 A.9.2.5
+Tous les comptes inactifs sont désactivés automatiquement après 60 jours.;Conforme – Contrôle préventif;ISO 27001 A.9.2.6 / NIST AC-2 h
+La révocation des accès est immédiate lors du départ d’un collaborateur.;Conforme – Processus réactif;ISO 27001 A.9.2.6
+Les comptes administrateurs sont toujours attribués de manière nominative.;Conforme – Responsabilisation;ISO 27001 A.9.2.3
+La MFA est exigée pour toutes les connexions externes et VPN.;Conforme – Sécurité renforcée;ISO 27001 A.9.4.2 / NIST IA-2
+Les logs d’accès sont archivés et revus mensuellement par la sécurité.;Conforme – Traçabilité;ISO 27001 A.12.4.1
+Les demandes d’accès doivent être approuvées par un manager.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.1
+Les privilèges élevés nécessitent une double validation.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.3
+Les comptes SaaS sont intégrés dans l’IdP et gérés centralement.;Conforme – Gouvernance cloud;ISO 27001 A.9.2.6
+Les sessions inactives expirent automatiquement après 15 minutes.;Conforme – Sécurité de session;ISO 27001 A.9.4.2
+Les droits métiers suivent le principe du moindre privilège.;Conforme – Gouvernance granulaire;ISO 27001 A.9.1.2
+Les comptes génériques sont interdits par la politique de sécurité.;Conforme – Responsabilisation;ISO 27001 A.9.2.3
+Les logs VPN sont collectés et intégrés dans le SIEM.;Conforme – Supervision efficace;ISO 27001 A.12.4.1
+Les mots de passe sont stockés hachés et salés.;Conforme – Bonnes pratiques;ISO 27001 A.10.1 / NIST IA-5
+Les accès critiques nécessitent une MFA obligatoire.;Conforme – Renforcement sécurité;ISO 27001 A.9.4.2
+Les comptes techniques sont recertifiés tous les 6 mois.;Conforme – Gouvernance périodique;ISO 27001 A.9.2.5
+Les demandes d’accès exceptionnelles sont tracées et archivées.;Conforme – Gouvernance stricte;SOX 404
+Les sessions SSH administrateurs sont journalisées.;Conforme – Supervision renforcée;ISO 27001 A.12.4.1
+L’IdP centralise l’authentification des applications métiers.;Conforme – Gouvernance IAM;ISO 27001 A.9.2.6
+Les droits des prestataires sont supprimés dès la fin du contrat.;Conforme – Gouvernance rigoureuse;ISO 27001 A.9.2.6
+Les utilisateurs sont notifiés à chaque modification de leurs droits.;Conforme – Transparence;ISO 27001 A.9.2.6
+Chaque compte est associé à une identité unique.;Conforme – Responsabilisation;ISO 27001 A.9.2.3
+Les logs critiques sont conservés au minimum 12 mois.;Conforme – Gouvernance documentaire;ISO 27001 A.12.4.1
+Les accès aux applications critiques sont revus semestriellement.;Conforme – Gouvernance périodique;ISO 27001 A.9.2.5
+Les certificats expirés sont révoqués automatiquement.;Conforme – Gouvernance technique;ISO 27001 A.10.1
+Les groupes AD sensibles sont validés tous les mois.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.5
+L’accès root est réservé à des procédures exceptionnelles.;Conforme – Gouvernance critique;ISO 27001 A.9.2.3
+Les mots de passe doivent contenir 12 caractères minimum.;Conforme – Politique forte;ISO 27001 A.9.4.3
+Les logs SSO sont revus par l’équipe sécurité chaque semaine.;Conforme – Traçabilité renforcée;ISO 27001 A.12.4.1
+L’accès VPN requiert une authentification multifactorielle.;Conforme – Sécurité renforcée;NIST AC-17
+Les comptes inactifs déclenchent une alerte automatique.;Conforme – Détection proactive;ISO 27001 A.9.2.6
+Les sessions RDP administrateurs sont limitées à 2 heures.;Conforme – Gouvernance technique;ISO 27001 A.9.4.2
+Les comptes invités expirent automatiquement après 30 jours.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.6
+Les clés SSH sont renouvelées tous les 6 mois.;Conforme – Gouvernance technique;NIST IA-5
+Les logs d’authentification sont corrélés avec d’autres événements.;Conforme – Supervision efficace;ISO 27001 A.12.4.1
+Les accès aux bases de données sont limités aux DBA autorisés.;Conforme – Gouvernance stricte;ISO 27001 A.9.1.2
+Les preuves d’approbation sont archivées pour 7 ans.;Conforme – Gouvernance réglementaire;SOX 404
+Chaque élévation de privilège est validée par un comité de sécurité.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.1
+Les utilisateurs doivent signer une charte de sécurité annuelle.;Conforme – Gouvernance organisationnelle;ISO 27001 A.7.2.2
+Les comptes de test sont supprimés après chaque projet.;Conforme – Hygiène IT;ISO 27001 A.9.2.6
+L’accès aux salles serveurs est protégé par badge nominatif.;Conforme – Contrôle physique;ISO 27001 A.11.1.1
+L’IdP impose une authentification unique pour toutes les applications.;Conforme – Gouvernance IAM;ISO 27001 A.9.2.6
+Les tokens OAuth expirent automatiquement après 60 minutes.;Conforme – Gouvernance technique;NIST IA-5
+Les privilèges sont systématiquement alignés avec le rôle métier.;Conforme – Gouvernance granulaire;ISO 27001 A.9.1.2
+Les sessions web expirent automatiquement après 15 minutes.;Conforme – Gouvernance stricte;ISO 27001 A.9.4.2
+Les comptes administrateurs nécessitent une approbation hiérarchique.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1
+Chaque accès temporaire est supprimé après utilisation.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.6
+Les logs VPN sont revus hebdomadairement par l’équipe sécurité.;Conforme – Gouvernance renforcée;ISO 27001 A.12.4.1
+Les droits d’accès sont recalibrés après chaque mobilité interne.;Conforme – Gouvernance RH;ISO 27001 A.9.2.6
+Les prestataires doivent signer une clause de confidentialité.;Conforme – Gouvernance contractuelle;ISO 27001 A.15.1.2
+Les accès critiques nécessitent une authentification biométrique.;Conforme – Gouvernance technique;ISO 27001 A.9.4.2
+Les utilisateurs sont formés chaque année à la gestion des accès.;Conforme – Sensibilisation;ISO 27001 A.7.2.2
+Les journaux d’administration sont protégés contre toute modification.;Conforme – Gouvernance technique;ISO 27001 A.12.4.1
+Les accès cloud sont gérés uniquement par l’IdP officiel.;Conforme – Gouvernance cloud;ISO 27001 A.9.2.6
+Chaque demande d’accès est associée à un ticket d’approbation.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.1
+Les sessions administrateurs sont limitées à 1 heure.;Conforme – Gouvernance technique;ISO 27001 A.9.4.2
+L’accès aux fichiers sensibles est limité aux utilisateurs autorisés.;Conforme – Gouvernance documentaire;ISO 27001 A.9.1.2
+Chaque suppression d’accès est validée par l’équipe sécurité.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.6
+Les clés API expirent automatiquement tous les 90 jours.;Conforme – Gouvernance technique;NIST IA-5
+Les justificatifs d’approbation sont disponibles pour chaque audit.;Conforme – Gouvernance documentaire;SOX 404
+Les logs SSO sont stockés dans un environnement sécurisé.;Conforme – Gouvernance technique;ISO 27001 A.12.4.1
+Les comptes administrateurs sont protégés par un PAM.;Conforme – Gouvernance des privilèges;ISO 27001 A.9.2.3
+Les sessions RDP expirent automatiquement après 1h d’inactivité.;Conforme – Gouvernance technique;ISO 27001 A.9.4.2
+Les comptes utilisateurs sont créés uniquement via le workflow RH.;Conforme – Gouvernance automatisée;ISO 27001 A.9.2.1
+Les privilèges élevés sont surveillés en temps réel.;Conforme – Supervision renforcée;ISO 27001 A.12.4.1
+Les certificats TLS sont renouvelés automatiquement avant expiration.;Conforme – Gouvernance technique;ISO 27001 A.10.1
+Les sessions administrateurs nécessitent MFA + approbation.;Conforme – Gouvernance renforcée;ISO 27001 A.9.4.2
+Les accès exceptionnels sont documentés dans un registre.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.6
+Les logs de sécurité sont revus quotidiennement.;Conforme – Gouvernance renforcée;ISO 27001 A.12.4.1
+Les comptes d’application sont surveillés par l’équipe sécurité.;Conforme – Gouvernance stricte;ISO 27001 A.9.2.3
+Les revues des droits sont effectuées mais seulement une fois par an.;Partiellement conforme – Fréquence insuffisante;ISO 27001 A.9.2.5
+Les comptes inactifs sont désactivés mais après 180 jours.;Partiellement conforme – Délai trop long;ISO 27001 A.9.2.6 / NIST AC-2 h
+Les accès administrateurs sont attribués nominativement mais non recertifiés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+La MFA est activée mais uniquement pour certains services.;Partiellement conforme – Couverture partielle;ISO 27001 A.9.4.2
+Les logs d’accès sont collectés mais rarement consultés.;Partiellement conforme – Traçabilité limitée;ISO 27001 A.12.4.1
+Les sessions inactives expirent mais après 2 heures.;Partiellement conforme – Paramétrage trop permissif;ISO 27001 A.9.4.2
+Les demandes d’accès sont validées mais sans preuve documentaire.;Partiellement conforme – Validation non tracée;ISO 27001 A.9.2.1
+Les comptes de service sont recensés mais partagés entre plusieurs applis.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les revues AD couvrent les métiers mais pas les comptes techniques.;Partiellement conforme – Périmètre limité;ISO 27001 A.9.2.5
+Les justificatifs d’accès existent mais ne sont pas horodatés.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les certificats expirés sont révoqués mais parfois en retard.;Partiellement conforme – Gouvernance imparfaite;ISO 27001 A.10.1
+Les comptes invités expirent automatiquement mais après 90 jours.;Partiellement conforme – Délai trop long;ISO 27001 A.9.2.6
+Les droits métiers sont revus mais pas les privilèges élevés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.5
+Les sessions administrateurs sont journalisées mais non exploitées.;Partiellement conforme – Contrôle non suivi;ISO 27001 A.12.4.1
+Les tokens OAuth expirent mais après 1 an.;Partiellement conforme – Durée trop longue;NIST IA-5
+Les comptes prestataires sont désactivés mais parfois plusieurs jours après départ.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les logs VPN existent mais sont vérifiés uniquement en cas d’incident.;Partiellement conforme – Supervision réactive;ISO 27001 A.12.4.1
+Les accès d’urgence sont supprimés mais pas systématiquement.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les clés SSH sont renouvelées mais seulement tous les 2 ans.;Partiellement conforme – Rotation trop faible;NIST IA-5
+Les sessions RDP expirent mais après 6h.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A.9.4.2
+Les comptes orphelins sont supprimés mais avec retard.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les logs SSO couvrent seulement certaines applications.;Partiellement conforme – Traçabilité incomplète;ISO 27001 A.12.4.1
+Les utilisateurs doivent changer leur mot de passe mais seulement tous les 12 mois.;Partiellement conforme – Politique faible;ISO 27001 A.9.4.3
+Les comptes de test sont supprimés mais parfois plusieurs semaines après.;Partiellement conforme – Gouvernance tardive;ISO 27001 A.9.2.6
+Les privilèges élevés nécessitent une approbation mais pas toujours multiple.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.9.2.1
+Les logs d’authentification sont centralisés mais pas corrélés.;Partiellement conforme – Gouvernance limitée;ISO 27001 A.12.4.1
+Les sessions web expirent mais après 2h.;Partiellement conforme – Paramétrage permissif;ISO 27001 A.9.4.2
+Les comptes SaaS sont désactivés mais pas toujours supprimés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.6
+Les preuves d’accès sont archivées mais non vérifiées.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les droits hérités sont documentés mais rarement validés.;Partiellement conforme – Gouvernance partielle;ISO 27001 A.9.2.6
+Les sessions SSH expirent mais après 4h.;Partiellement conforme – Paramétrage trop long;ISO 27001 A.9.4.2
+Les comptes techniques sont surveillés mais pas recertifiés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les justificatifs d’approbation existent mais pas pour tous les accès.;Partiellement conforme – Gouvernance lacunaire;SOX 404
+Les certificats TLS sont renouvelés mais parfois après expiration.;Partiellement conforme – Gouvernance imparfaite;ISO 27001 A.10.1
+Les logs VPN sont collectés mais non revus régulièrement.;Partiellement conforme – Supervision limitée;ISO 27001 A.12.4.1
+Les comptes génériques sont surveillés mais restent autorisés.;Partiellement conforme – Gouvernance incomplète;ISO 27001 A.9.2.3
+Les comptes prestataires sont révoqués mais sans preuve documentaire.;Partiellement conforme – Gouvernance lacunaire;ISO 27001 A.9.2.6
+Les sessions administrateurs expirent mais après 8h.;Partiellement conforme – Paramétrage laxiste;ISO 27001 A
+Chaque création de compte est validée par deux niveaux hiérarchiques.;Conforme – Double approbation en place;ISO 27001 A.9.2.1 / SOX 404
+Les droits des administrateurs sont revus mensuellement.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.5
+Un registre central consigne toutes les demandes d’accès.;Conforme – Traçabilité complète;ISO 27001 A.9.2.6
+Les accès aux environnements de production nécessitent une autorisation spécifique.;Conforme – Accès contrôlé;NIST AC-6
+Les droits inactifs sont supprimés automatiquement après 30 jours.;Conforme – Politique préventive;ISO 27001 A.9.2.6
+L’accès aux applications critiques est soumis à authentification forte.;Conforme – MFA exigée;ISO 27001 A.9.4.2
+Les comptes temporaires sont désactivés à la date d’expiration prévue.;Conforme – Processus automatisé;NIST AC-2
+Un contrôle d’accès logique est couplé au contrôle d’accès physique.;Conforme – Défense en profondeur;ISO 27001 A.11.1.1
+Les logs d’accès sont analysés chaque semaine.;Conforme – Suivi continu;ISO 27001 A.12.4.1
+Les accès VPN nécessitent un certificat nominatif.;Conforme – Authentification renforcée;ISO 27001 A.9.4.2
+Les sessions utilisateurs expirent automatiquement après 15 minutes d’inactivité.;Conforme – Politique de session stricte;NIST AC-12
+Chaque demande d’accès est tracée et archivée.;Conforme – Gouvernance documentaire;COBIT DSS05
+Les comptes invités sont désactivés après l’événement.;Conforme – Cycle de vie contrôlé;ISO 27001 A.9.2.6
+L’ouverture de comptes est conditionnée à une validation RH.;Conforme – Gouvernance inter-départements;ISO 27001 A.9.2.1
+Les droits critiques sont attribués selon le principe du moindre privilège.;Conforme – Limitation des accès;ISO 27001 A.9.1.2
+La revue trimestrielle des droits est documentée et approuvée.;Conforme – Contrôle périodique;NIST AC-2 j
+L’usage des comptes partagés est interdit et remplacé par des identifiants nominatifs.;Conforme – Responsabilité individuelle;ISO 27001 A.9.2.3
+Les accès aux bases de données sensibles nécessitent une double authentification.;Conforme – MFA appliquée;ISO 27001 A.9.4.2
+Chaque suppression de compte est validée par le responsable d’application.;Conforme – Contrôle d’approbation;ISO 27001 A.9.2.6
+Les connexions distantes passent par un bastion sécurisé.;Conforme – Accès supervisé;NIST AC-17
+Les prestataires externes ont des comptes séparés avec durée limitée.;Conforme – Gestion des tiers;ISO 27001 A.9.2.6
+Une liste des administrateurs habilités est maintenue et validée par la DSI.;Conforme – Gouvernance claire;COBIT DSS05
+Les accès sont retirés immédiatement après le départ d’un collaborateur.;Conforme – Processus réactif;ISO 27001 A.9.2.6
+Un contrôle d’intégrité est appliqué aux fichiers de logs.;Conforme – Preuve non altérable;ISO 27001 A.12.4.2
+Les habilitations aux applications critiques sont validées par le métier.;Conforme – Validation métier;ISO 27001 A.9.2.1
+Une procédure de recertification annuelle couvre tous les comptes.;Conforme – Gouvernance annuelle;ISO 27001 A.9.2.5
+Les accès aux environnements sensibles nécessitent un badge physique et un mot de passe.;Conforme – Double barrière;ISO 27001 A.11.1.1
+Les utilisateurs doivent renouveler leur mot de passe tous les 90 jours.;Conforme – Politique classique;NIST IA-5
+Les comptes de service sont limités à leur usage strictement défini.;Conforme – Droits minimaux;ISO 27001 A.9.2.3
+Les utilisateurs inactifs depuis 60 jours sont automatiquement suspendus.;Conforme – Gestion proactive;NIST AC-2 h
+Chaque ouverture d’accès est notifiée au responsable hiérarchique.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1
+Les demandes d’accès sont validées via un outil centralisé.;Conforme – Processus outillé;COBIT DSS05
+Les identifiants par défaut sont systématiquement modifiés à l’installation.;Conforme – Sécurité renforcée;NIST IA-5 f
+Les droits sensibles nécessitent une approbation de la direction.;Conforme – Gouvernance renforcée;ISO 27001 A.9.2.1
+Les administrateurs utilisent une authentification multi-facteurs.;Conforme – MFA exigée;ISO 27001 A.9.4.2
+L’ensemble des accès est journalisé dans une base centralisée.;Conforme – Journalisation exhaustive;ISO 27001 A.12.4.1
+Les comptes privilégiés sont régulièrement audités.;Conforme – Contrôle périodique;COBIT DSS06
+Les droits d’accès sont revus semestriellement avec le métier.;Conforme – Revue documentée;ISO 27001 A.9.2.5
+Les utilisateurs reçoivent une formation annuelle sur la gestion des accès.;Conforme – Sensibilisation en place;ISO 27001 A.7.2.2
+La révocation des comptes est immédiate en cas de fraude.;Conforme – Mesure de sécurité;NIST AC-2 g
+L’ouverture des comptes est conditionnée à la complétude du dossier employé.;Conforme – Processus rigoureux;ISO 27001 A.9.2.1
+Les accès aux systèmes critiques sont attribués sur justification écrite.;Conforme – Gouvernance stricte;COBIT DSS05
+Les droits techniques sont attribués temporairement et suivis par ticketing.;Conforme – Suivi des accès;ISO 27001 A.9.2.6
+Les administrateurs se connectent via un compte nominatif et un compte technique séparé.;Conforme – Ségrégation d’usage;ISO 27001 A.9.2.3
+Les accès au cloud sont gérés via un Identity Provider central.;Conforme – Gestion centralisée;ISO 27001 A.9.4.2
+Les comptes génériques sont interdits et remplacés par des comptes personnels.;Conforme – Responsabilité renforcée;NIST AC-2
+Les privilèges élevés nécessitent une validation multi-niveaux.;Conforme – Gouvernance hiérarchique;ISO 27001 A.9.1.2
+Chaque réinitialisation de mot de passe est tracée et validée.;Conforme – Suivi rigoureux;ISO 27001 A.9.4.3
+Les droits des prestataires sont systématiquement supprimés après contrat.;Conforme – Cycle de vie contrôlé;ISO 27001 A.9.2.6
+Les accès aux serveurs critiques nécessitent un jeton matériel.;Conforme – Authentification forte;NIST IA-2
+Les sessions administrateurs sont limitées dans le temps.;Conforme – Contrôle de durée;ISO 27001 A.9.4.2
+Chaque rôle applicatif est documenté et approuvé.;Conforme – Gouvernance par rôles;ISO 27001 A.9.2.1
+La DSI valide chaque dérogation d’accès exceptionnelle.;Conforme – Gestion des exceptions;COBIT DSS05
+Les droits sensibles sont audités par un tiers indépendant.;Conforme – Contrôle externe;ISO 27001 A.18.2.3
+Les comptes techniques nécessitent une approbation spécifique.;Conforme – Gouvernance adaptée;NIST AC-2 d
+Les utilisateurs doivent signer une charte d’utilisation avant obtention d’un accès.;Conforme – Engagement utilisateur;ISO 27001 A.7.2.2
+Les logs d’accès sont archivés pendant 12 mois.;Conforme – Archivage conforme;ISO 27001 A.12.4.1
+Chaque demande d’accès est soumise à un workflow d’approbation électronique.;Conforme – Gouvernance automatisée;ISO 27001 A.9.2.1
+Les mots de passe doivent contenir au moins 12 caractères avec complexité.;Conforme – Politique robuste;NIST IA-5
+Les comptes inactifs sont purgés tous les 45 jours.;Conforme – Gestion des comptes;ISO 27001 A.9.2.6
+Les accès aux systèmes financiers sont soumis à une double validation.;Conforme – Sécurité renforcée;SOX 404
+Chaque administrateur utilise un compte à usage unique pour les actions sensibles.;Conforme – Ségrégation renforcée;ISO 27001 A.9.2.3
+Les privilèges étendus font l’objet d’un contrôle trimestriel.;Conforme – Gouvernance périodique;COBIT DSS05
+Les utilisateurs ne peuvent pas cumuler rôles métier et rôles techniques.;Conforme – Ségrégation stricte;ISO 27001 A.6.1.2
+Chaque nouveau logiciel est configuré sans identifiants par défaut.;Conforme – Politique systématique;NIST IA-5 f
+Les sessions inactives sont automatiquement bloquées au-delà de 10 minutes.;Conforme – Politique stricte;NIST AC-12
+Un mécanisme d’authentification biométrique est utilisé pour certains accès.;Conforme – MFA renforcée;ISO 27001 A.9.4.2
+L’habilitation d’un utilisateur est toujours reliée à un rôle métier.;Conforme – Gouvernance par rôles;ISO 27001 A.9.1.2
+Les accès aux fichiers sensibles nécessitent une approbation formelle.;Conforme – Gouvernance documentaire;ISO 27001 A.9.2.1
+La gestion des comptes est automatisée via un outil IAM.;Conforme – Processus automatisé;ISO 27001 A.9.2.6
